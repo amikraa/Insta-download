@@ -805,6 +805,17 @@
   let _shortcode = null;
 
   /* ──────────────────────────────────
+     CONFIGURATION
+     Update these values for your deployment
+  ────────────────────────────────── */
+  // Set to your Render backend URL (e.g., 'https://your-app.onrender.com')
+  // Leave empty or use '' for same-domain deployment
+  const BASE_API_URL = '';
+  
+  // Your API key (should match INSTAGRAM_API_KEY in .env)
+  const API_KEY = 'dev-api-key-change-in-production';
+
+  /* ──────────────────────────────────
      HELPERS
   ────────────────────────────────── */
   const $ = id => document.getElementById(id);
@@ -856,9 +867,15 @@
     try {
       setProgress(40, 'Fetching video info…');
 
+      // API Key - Replace with your actual API key from .env
+      const API_KEY = 'dev-api-key-change-in-production';
+      
       const res = await fetch('/api/download', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-API-Key': API_KEY
+        },
         body: JSON.stringify({ url }),
       });
 
@@ -871,19 +888,23 @@
       }
 
       setProgress(100, 'Ready!');
-      _videoUrl  = data.videoUrl;
-      _shortcode = data.shortcode;
+      
+      // New API returns data in data.data object
+      const videoData = data.data;
+      _videoUrl  = videoData.videoUrl;
+      _audioUrl  = videoData.audioUrl || null;
+      _shortcode = videoData.shortcode;
 
       // Update UI
-      $('r-title').textContent = data.owner
-        ? `@${data.owner} — ${data.caption || 'Instagram Reel'}`
-        : (data.caption || 'Instagram Reel');
+      $('r-title').textContent = videoData.author
+        ? `@${videoData.author} — ${videoData.title || 'Instagram Reel'}`
+        : (videoData.title || 'Instagram Reel');
 
-      const dur = data.duration ? ` · ${data.duration}s` : '';
+      const dur = videoData.duration ? ` · ${videoData.duration}s` : '';
       $('r-meta').textContent = `HD · MP4${dur} · Ready to download`;
 
-      if (data.thumbUrl) {
-        $('r-thumb').innerHTML = `<img src="${data.thumbUrl}" alt="Reel thumbnail" loading="lazy" onerror="this.parentElement.textContent='🎬'"/>`;
+      if (videoData.thumbnail) {
+        $('r-thumb').innerHTML = `<img src="${videoData.thumbnail}" alt="Reel thumbnail" loading="lazy" onerror="this.parentElement.textContent='🎬'"/>`;
       }
 
       setTimeout(() => {
@@ -898,20 +919,25 @@
     }
   }
 
-  /* save video – streams through /api/proxy-download */
-function saveVideo() {
-  if (!_videoUrl) return;
-  window.open(_videoUrl, '_blank');
-}
-  /* save audio (server would need to convert; here we link MP4 with .mp3 hint) */
-  function saveAudio() {
+  /* save video – stream through /api/stream */
+  function saveVideo() {
     if (!_videoUrl) return;
-    const a = document.createElement('a');
-    a.href = `/api/proxy-download?url=${encodeURIComponent(_videoUrl)}&filename=audio-${_shortcode || 'reelsave'}.mp3`;
-    a.download = `audio-${_shortcode || 'reelsave'}.mp3`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    const API_KEY = 'dev-api-key-change-in-production';
+    const filename = `reel-${_shortcode || 'video'}.mp4`;
+    // Use the stream endpoint with API key
+    const streamUrl = `/api/stream?url=${encodeURIComponent(_videoUrl)}&filename=${encodeURIComponent(filename)}&type=video/mp4&api_key=${encodeURIComponent(API_KEY)}`;
+    window.open(streamUrl, '_blank');
+  }
+
+  /* save audio – stream through /api/stream */
+  function saveAudio() {
+    if (!_audioUrl && !_videoUrl) return;
+    const API_KEY = 'dev-api-key-change-in-production';
+    const urlToUse = _audioUrl || _videoUrl;
+    const filename = `audio-${_shortcode || 'reelsave'}.mp3`;
+    // Use the stream endpoint with API key
+    const streamUrl = `/api/stream?url=${encodeURIComponent(urlToUse)}&filename=${encodeURIComponent(filename)}&type=audio/mpeg&api_key=${encodeURIComponent(API_KEY)}`;
+    window.open(streamUrl, '_blank');
   }
 
   function copyLink() {

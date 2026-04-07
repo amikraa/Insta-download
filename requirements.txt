@@ -1,0 +1,21 @@
+# Instagram Reel Downloader - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core Framework
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Video Extraction
+yt-dlp
+
+# HTTP Client for Streaming
+requests==2.31.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Production Server (for Render deployment)
+gunicorn==21.2.0
+
+# Optional: For better performance
+# blinker==1.7.0  # Flask dependency for signals
