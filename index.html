@@ -483,7 +483,7 @@
           placeholder="https://www.instagram.com/reel/..."
           autocomplete="off" spellcheck="false"
           aria-label="Instagram Reel URL" />
-        <button class="btn-dl" id="btn-dl" onclick="doDownload()" aria-label="Download Reel">
+        <button type="button" class="btn-dl" id="btn-dl" onclick="doDownload()" aria-label="Download Reel">
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M2 13h12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Download
         </button>
@@ -810,7 +810,7 @@
   ────────────────────────────────── */
   // Set to your Render backend URL (e.g., 'https://your-app.onrender.com')
   // Leave empty or use '' for same-domain deployment
-  const BASE_API_URL = '';
+  const BASE_API_URL = 'http://localhost:5000';
   
   // Your API key (should match INSTAGRAM_API_KEY in .env)
   // For local testing, use the same key as in .env
@@ -871,7 +871,7 @@
       // API Key - Replace with your actual API key from .env
       const API_KEY = '2e7e08e1e7f078ab97b325dc8e3b311b1663edb9eb11d907a553238ead00c8b0';
       
-      const res = await fetch('/api/download', {
+      const res = await fetch(`${BASE_API_URL}/api/download`, {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
@@ -891,7 +891,7 @@
       setProgress(100, 'Ready!');
       
       // New API returns data in data.data object
-      const videoData = data.data;
+      const videoData = data.data || data;
       _videoUrl  = videoData.videoUrl;
       _audioUrl  = videoData.audioUrl || null;
       _shortcode = videoData.shortcode;
@@ -926,7 +926,7 @@
     const API_KEY = '2e7e08e1e7f078ab97b325dc8e3b311b1663edb9eb11d907a553238ead00c8b0';
     const filename = `reel-${_shortcode || 'video'}.mp4`;
     // Use the stream endpoint with API key
-    const streamUrl = `/api/stream?url=${encodeURIComponent(_videoUrl)}&filename=${encodeURIComponent(filename)}&type=video/mp4&api_key=${encodeURIComponent(API_KEY)}`;
+    const streamUrl = `${BASE_API_URL}/api/stream?url=${encodeURIComponent(_videoUrl)}&filename=${encodeURIComponent(filename)}&type=video/mp4&api_key=${encodeURIComponent(API_KEY)}`;
     window.open(streamUrl, '_blank');
   }
 
@@ -937,7 +937,7 @@
     const urlToUse = _audioUrl || _videoUrl;
     const filename = `audio-${_shortcode || 'reelsave'}.mp3`;
     // Use the stream endpoint with API key
-    const streamUrl = `/api/stream?url=${encodeURIComponent(urlToUse)}&filename=${encodeURIComponent(filename)}&type=audio/mpeg&api_key=${encodeURIComponent(API_KEY)}`;
+    const streamUrl = `${BASE_API_URL}/api/stream?url=${encodeURIComponent(urlToUse)}&filename=${encodeURIComponent(filename)}&type=audio/mpeg&api_key=${encodeURIComponent(API_KEY)}`;
     window.open(streamUrl, '_blank');
   }
 

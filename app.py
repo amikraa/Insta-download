@@ -19,7 +19,7 @@ from functools import wraps
 from collections import defaultdict
 from threading import Lock
 
-from flask import Flask, request, jsonify, Response, send_from_directory
+from flask import Flask, request, jsonify, Response
 import yt_dlp
 import requests
 
@@ -328,8 +328,8 @@ def stream_url(url, filename, content_type, extra_headers=None):
 
 @app.route('/')
 def home():
-    """Serve the frontend HTML"""
-    return send_from_directory('.', 'index.html')
+    """API root - health check"""
+    return jsonify({'status': 'API running', 'version': '2.0.0'})
 
 
 @app.route('/api/download', methods=['POST'])
@@ -605,17 +605,6 @@ if __name__ == '__main__':
     logger.info("Starting Instagram Reel Downloader v2.0.0")
     logger.info(f"Host: {Config.HOST}, Port: {Config.PORT}")
     logger.info(f"Rate limiting: {Config.RATE_LIMIT_MAX} req/{Config.RATE_LIMIT_WINDOW}s")
-    
-    # For development: open browser
-    if Config.DEBUG:
-        import webbrowser
-        import threading
-        
-        def open_browser():
-            time.sleep(1.5)
-            webbrowser.open(f'http://localhost:{Config.PORT}')
-        
-        threading.Thread(target=open_browser, daemon=True).start()
     
     app.run(
         host=Config.HOST,

@@ -4,12 +4,12 @@
 .instagram.com	TRUE	/	TRUE	1803050122	ps_n	1
 .instagram.com	TRUE	/	TRUE	1801844242	datr	EZ5WaRpbnJi4hC3p3O2DagJw
 .instagram.com	TRUE	/	TRUE	1798820244	ig_nrcb	1
-.instagram.com	TRUE	/	TRUE	1783356271	ds_user_id	49691018864
-.instagram.com	TRUE	/	TRUE	1810140271	csrftoken	jZzNuN2bOGbNPXLxjQm94mso0wB1ZI5w
+.instagram.com	TRUE	/	TRUE	1783358922	ds_user_id	49691018864
+.instagram.com	TRUE	/	TRUE	1810142922	csrftoken	jZzNuN2bOGbNPXLxjQm94mso0wB1ZI5w
 .instagram.com	TRUE	/	TRUE	1798820246	ig_did	6AEC0247-2607-4418-B16A-22046A4F8223
 .instagram.com	TRUE	/	TRUE	1803050122	ps_l	1
 .instagram.com	TRUE	/	TRUE	1776170377	wd	1536x695
 .instagram.com	TRUE	/	TRUE	1801844244	mid	aVaeEwALAAGUawtX652JecZ-bx7f
 .instagram.com	TRUE	/	TRUE	1807101575	sessionid	49691018864%3ArGkeify3NqbN5R%3A25%3AAYiVNqxyiv_9QN8pHwQqcq5EkKO0bvrY1RYyotC6QA
 .instagram.com	TRUE	/	TRUE	1776170377	dpr	1.25
-.instagram.com	TRUE	/	TRUE	0	rur	"CCO\05449691018864\0541807116272:01fec73cee3bdb7dc82cf2410f4a801466f3eab6ec083a147a4b2e78fbe979c561cd2303"
+.instagram.com	TRUE	/	TRUE	0	rur	"CCO\05449691018864\0541807118923:01feb2928ab0ce34355cbf0e186c98a44e79acb88ce921125cd9557697e8d41d156b5164"
