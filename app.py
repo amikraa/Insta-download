@@ -42,26 +42,6 @@ logger = logging.getLogger(__name__)
 Config.validate()
 
 # ═══════════════════════════════════════════════════════════════
-# CORS MIDDLEWARE
-# ═══════════════════════════════════════════════════════════════
-
-@app.after_request
-def add_cors_headers(response):
-    """Add CORS headers to all responses"""
-    allowed_origin = Config.ALLOWED_ORIGIN
-    response.headers['Access-Control-Allow-Origin'] = allowed_origin
-    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, X-API-Key'
-    response.headers['Access-Control-Max-Age'] = '3600'
-    return response
-
-@app.route('/api/download', methods=['OPTIONS'])
-@require_api_key
-def download_options():
-    """Handle CORS preflight requests"""
-    return '', 204
-
-# ═══════════════════════════════════════════════════════════════
 # RATE LIMITER
 # ═══════════════════════════════════════════════════════════════
 
@@ -157,6 +137,21 @@ def rate_limit(f):
         
         return f(*args, **kwargs)
     return decorated_function
+
+
+# ═══════════════════════════════════════════════════════════════
+# CORS MIDDLEWARE
+# ═══════════════════════════════════════════════════════════════
+
+@app.after_request
+def add_cors_headers(response):
+    """Add CORS headers to all responses"""
+    allowed_origin = Config.ALLOWED_ORIGIN
+    response.headers['Access-Control-Allow-Origin'] = allowed_origin
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, X-API-Key'
+    response.headers['Access-Control-Max-Age'] = '3600'
+    return response
 
 
 # ═══════════════════════════════════════════════════════════════

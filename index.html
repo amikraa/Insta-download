@@ -813,7 +813,8 @@
   const BASE_API_URL = '';
   
   // Your API key (should match INSTAGRAM_API_KEY in .env)
-  const API_KEY = 'dev-api-key-change-in-production';
+  // For local testing, use the same key as in .env
+  const API_KEY = '2e7e08e1e7f078ab97b325dc8e3b311b1663edb9eb11d907a553238ead00c8b0';
 
   /* ──────────────────────────────────
      HELPERS
@@ -868,7 +869,7 @@
       setProgress(40, 'Fetching video info…');
 
       // API Key - Replace with your actual API key from .env
-      const API_KEY = 'dev-api-key-change-in-production';
+      const API_KEY = '2e7e08e1e7f078ab97b325dc8e3b311b1663edb9eb11d907a553238ead00c8b0';
       
       const res = await fetch('/api/download', {
         method: 'POST',
@@ -922,7 +923,7 @@
   /* save video – stream through /api/stream */
   function saveVideo() {
     if (!_videoUrl) return;
-    const API_KEY = 'dev-api-key-change-in-production';
+    const API_KEY = '2e7e08e1e7f078ab97b325dc8e3b311b1663edb9eb11d907a553238ead00c8b0';
     const filename = `reel-${_shortcode || 'video'}.mp4`;
     // Use the stream endpoint with API key
     const streamUrl = `/api/stream?url=${encodeURIComponent(_videoUrl)}&filename=${encodeURIComponent(filename)}&type=video/mp4&api_key=${encodeURIComponent(API_KEY)}`;
@@ -932,7 +933,7 @@
   /* save audio – stream through /api/stream */
   function saveAudio() {
     if (!_audioUrl && !_videoUrl) return;
-    const API_KEY = 'dev-api-key-change-in-production';
+    const API_KEY = '2e7e08e1e7f078ab97b325dc8e3b311b1663edb9eb11d907a553238ead00c8b0';
     const urlToUse = _audioUrl || _videoUrl;
     const filename = `audio-${_shortcode || 'reelsave'}.mp3`;
     // Use the stream endpoint with API key
