@@ -145,11 +145,13 @@ def rate_limit(f):
 
 @app.after_request
 def add_cors_headers(response):
-    """Add CORS headers to all responses"""
-    allowed_origin = Config.ALLOWED_ORIGIN
-    response.headers['Access-Control-Allow-Origin'] = allowed_origin
+    """Add CORS headers to all responses - allows any origin (temporary for dev/testing)"""
+    origin = request.headers.get('Origin', '*')
+    response.headers['Access-Control-Allow-Origin'] = origin if origin else '*'
+    response.headers['Vary'] = 'Origin'
     response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, X-API-Key'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, X-API-Key, Authorization'
+    response.headers['Access-Control-Allow-Credentials'] = 'true'
     response.headers['Access-Control-Max-Age'] = '3600'
     return response
 
