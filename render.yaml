@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: instagram-reel-downloader
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: INSTAGRAM_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: "*"
+        sync: false
+    healthCheckPath: /api/health
+    autoDeploy: true
