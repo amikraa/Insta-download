@@ -46,7 +46,7 @@ def fetch_video(url):
         }
 
 
-# ✅ API: Get video data
+# ✅ API: Get video data.
 @app.route('/api/download', methods=['POST'])
 def download():
     data = request.json
