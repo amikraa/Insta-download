@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ══════════════ PRIMARY SEO ══════════════ -->
+  <title>Instagram Reel Downloader – Save Reels Free HD No Watermark | ReelSave</title>
+  <meta name="description" content="Download Instagram Reels for free in HD quality with no watermark and no login. Paste any Instagram Reel link and save the video instantly to your phone or PC." />
+  <meta name="keywords" content="instagram reel downloader, download instagram reels, instagram video downloader, save instagram reels, reel downloader free, download reels without watermark, instagram reels hd downloader, reelsave, insta reel download, ig reel downloader online" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="ReelSave" />
+  <meta name="theme-color" content="#0a0a14" />
+  <link rel="canonical" href="https://reelsave.app/" />
+
+  <!-- ══════════════ OPEN GRAPH ══════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://reelsave.app/" />
+  <meta property="og:title"       content="Instagram Reel Downloader – Free HD No Watermark | ReelSave" />
+  <meta property="og:description" content="Download any Instagram Reel in HD for free. No watermark. No login. Just paste the link and save!" />
+  <meta property="og:image"       content="https://reelsave.app/og-image.jpg" />
+  <meta property="og:site_name"   content="ReelSave" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- ══════════════ TWITTER CARD ══════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@reelsave" />
+  <meta name="twitter:title"       content="Instagram Reel Downloader – Free HD | ReelSave" />
+  <meta name="twitter:description" content="Paste any Instagram Reel URL and download HD video instantly. Free, fast, no watermark." />
+  <meta name="twitter:image"       content="https://reelsave.app/og-image.jpg" />
+
+  <!-- ══════════════ SCHEMA: WebApplication ══════════════ -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"ReelSave – Instagram Reel Downloader","url":"https://reelsave.app/","description":"Free Instagram Reel Downloader. Download HD videos without watermark, no login required.","applicationCategory":"UtilitiesApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"18420"}}
+  </script>
+
+  <!-- ══════════════ SCHEMA: HowTo ══════════════ -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HowTo","name":"How to Download Instagram Reels","description":"Step-by-step guide to downloading Instagram Reels for free using ReelSave.","step":[{"@type":"HowToStep","name":"Copy the Instagram Reel Link","text":"Open Instagram, tap the share button on the Reel, and choose Copy Link."},{"@type":"HowToStep","name":"Paste the URL into ReelSave","text":"Go to reelsave.app, paste the copied link into the input box."},{"@type":"HowToStep","name":"Click Download and Save","text":"Click the Download button, wait a moment, then tap Save MP4 to download the video to your device."}]}
+  </script>
+
+  <!-- ══════════════ SCHEMA: FAQPage ══════════════ -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I download Instagram Reels?","acceptedAnswer":{"@type":"Answer","text":"Copy the Reel link from Instagram, paste it into ReelSave, and click Download. Your video will be ready in seconds."}},{"@type":"Question","name":"Is ReelSave free?","acceptedAnswer":{"@type":"Answer","text":"Yes, ReelSave is 100% free with no sign-up or subscription required."}},{"@type":"Question","name":"Can I download without watermark?","acceptedAnswer":{"@type":"Answer","text":"Yes. ReelSave downloads the original file from Instagram's servers with no watermarks added."}},{"@type":"Question","name":"Does it work on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes. ReelSave works on Android, iPhone, and any modern browser."}},{"@type":"Question","name":"How many Reels can I download?","acceptedAnswer":{"@type":"Answer","text":"There is no daily limit. You can download as many Reels as you want for free."}},{"@type":"Question","name":"Can I download private Reels?","acceptedAnswer":{"@type":"Answer","text":"No. ReelSave can only access publicly available Reels."}}]}
+  </script>
+
+  <!-- ══════════════ GOOGLE ADSENSE ══════════════ -->
+  <!-- REPLACE ca-pub-XXXXXXXXXXXXXXXXX with your Publisher ID -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <!-- ══════════════ FONTS ══════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─────────────────── RESET & TOKENS ─────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #0a0a14;
+      --surface:  #11111e;
+      --card:     #17172a;
+      --card2:    #1c1c30;
+      --border:   rgba(255,255,255,0.07);
+      --pink:     #f72585;
+      --violet:   #7b2fff;
+      --cyan:     #00d4ff;
+      --gold:     #ffbe0b;
+      --green:    #22c55e;
+      --text:     #ede9ff;
+      --muted:    #7e7e9a;
+      --r:        16px;
+      --fh:       'Syne', sans-serif;
+      --fb:       'DM Sans', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--fb);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* noise overlay */
+    body::after {
+      content: '';
+      position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.35;
+    }
+
+    /* blobs */
+    .blob { position: fixed; border-radius: 50%; filter: blur(130px); pointer-events: none; z-index: 0; }
+    .b1 { width: 520px; height: 520px; background: rgba(247,37,133,.11); top: -180px; left: -140px; animation: d1 20s ease-in-out infinite; }
+    .b2 { width: 600px; height: 600px; background: rgba(123,47,255,.09); top: 300px; right: -200px; animation: d2 24s ease-in-out infinite; }
+    .b3 { width: 450px; height: 450px; background: rgba(0,212,255,.07); bottom: -100px; left: 25%; animation: d3 18s ease-in-out infinite; }
+    @keyframes d1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,50px)} }
+    @keyframes d2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,30px)} }
+    @keyframes d3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(20px,-40px)} }
+
+    .z { position: relative; z-index: 1; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* ─────────────────── AD SYSTEM ─────────────────── */
+    /*
+     * AD SLOT GUIDE (replace .ad-placeholder with actual AdSense code):
+     *
+     * .ad-leaderboard   → 728×90   Desktop top/bottom banner
+     * .ad-billboard     → 970×250  Large desktop banner
+     * .ad-mrec          → 300×250  Medium rectangle (highest CTR)
+     * .ad-large-rect    → 336×280  Large rectangle
+     * .ad-half-page     → 300×600  Half page (premium)
+     * .ad-mobile-banner → 320×50   Mobile anchor
+     * .ad-mobile-rect   → 300×250  Mobile in-content
+     * .ad-in-feed       → native   In-feed / native ad
+     * .ad-anchor        → sticky bottom (mobile)
+     */
+    .ad-wrap {
+      text-align: center;
+      padding: 6px 0;
+    }
+    .ad-label {
+      font-size: 9px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 3px;
+      font-family: var(--fb);
+    }
+    /* placeholder visual – delete once AdSense code is pasted */
+    .ad-placeholder {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,.025);
+      border: 1px dashed rgba(255,255,255,.1);
+      border-radius: 6px;
+      color: var(--muted);
+      font-size: 11px;
+      font-family: var(--fb);
+      letter-spacing: .06em;
+    }
+
+    /* sizes */
+    .ad-leaderboard   .ad-placeholder { width: 728px; max-width: 100%; height: 90px; }
+    .ad-billboard     .ad-placeholder { width: 970px; max-width: 100%; height: 250px; }
+    .ad-mrec          .ad-placeholder { width: 300px; height: 250px; }
+    .ad-large-rect    .ad-placeholder { width: 336px; height: 280px; }
+    .ad-half-page     .ad-placeholder { width: 300px; height: 600px; }
+    .ad-mobile-banner .ad-placeholder { width: 320px; max-width: 100%; height: 50px; }
+    .ad-in-feed       .ad-placeholder { width: 100%; max-width: 720px; height: 100px; }
+
+    /* anchor ad – sticky bottom */
+    .ad-anchor {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 999;
+      text-align: center;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 6px;
+    }
+    .ad-anchor .ad-placeholder { width: 320px; height: 50px; max-width: 100%; }
+    .ad-anchor-close {
+      position: absolute;
+      top: 4px; right: 8px;
+      background: none; border: none;
+      color: var(--muted); font-size: 16px;
+      cursor: pointer; line-height: 1;
+    }
+
+    /* ─────────────────── TOP BAR AD ─────────────────── */
+    .topbar-ad {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 0;
+    }
+
+    /* ─────────────────── HEADER ─────────────────── */
+    header {
+      padding: 18px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: var(--fh); font-weight: 800; font-size: 1.45rem;
+      background: linear-gradient(135deg, var(--pink), var(--violet) 55%, var(--cyan));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; text-decoration: none;
+      display: flex; align-items: center; gap: 9px;
+    }
+    nav { display: flex; gap: 26px; align-items: center; }
+    nav a { color: var(--muted); text-decoration: none; font-size: .87rem; font-weight: 500; transition: color .2s; }
+    nav a:hover { color: var(--text); }
+
+    /* ─────────────────── HERO ─────────────────── */
+    .hero { padding: 70px 0 50px; text-align: center; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(247,37,133,.1); border: 1px solid rgba(247,37,133,.25);
+      color: var(--pink); font-size: .75rem; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 100px; margin-bottom: 22px;
+      animation: fu .6s ease both;
+    }
+    .hero h1 {
+      font-family: var(--fh); font-weight: 800;
+      font-size: clamp(2rem, 5.5vw, 3.8rem); line-height: 1.1;
+      letter-spacing: -.025em; margin-bottom: 18px;
+      animation: fu .6s .1s ease both;
+    }
+    .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero p { color: var(--muted); font-size: 1.05rem; max-width: 540px; margin: 0 auto 40px; animation: fu .6s .2s ease both; }
+    @keyframes fu { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ─────────────────── DOWNLOADER CARD ─────────────────── */
+    .dl-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 34px 32px;
+      max-width: 740px; margin: 0 auto;
+      box-shadow: 0 40px 80px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
+      animation: fu .6s .3s ease both;
+      position: relative; overflow: hidden;
+    }
+    .dl-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--pink), var(--violet), var(--cyan));
+    }
+    .input-row { display: flex; gap: 11px; margin-bottom: 14px; }
+    .url-input {
+      flex: 1; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; color: var(--text); font-family: var(--fb);
+      font-size: .94rem; padding: 13px 17px; outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .url-input::placeholder { color: var(--muted); }
+    .url-input:focus { border-color: rgba(247,37,133,.45); box-shadow: 0 0 0 3px rgba(247,37,133,.1); }
+    .btn-dl {
+      background: linear-gradient(135deg, var(--pink), var(--violet));
+      border: none; border-radius: 12px; color: #fff;
+      font-family: var(--fh); font-weight: 700; font-size: .92rem;
+      padding: 13px 24px; cursor: pointer; white-space: nowrap;
+      transition: opacity .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 20px rgba(247,37,133,.35);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .btn-dl:hover { opacity: .88; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(247,37,133,.45); }
+    .btn-dl.loading { pointer-events: none; opacity: .7; }
+    .hints { display: flex; flex-wrap: wrap; gap: 18px; }
+    .hint { display: flex; align-items: center; gap: 6px; font-size: .78rem; color: var(--muted); }
+    .dot { width: 6px; height: 6px; border-radius: 50%; }
+    .dg { background: var(--green); }
+    .db { background: var(--cyan); }
+    .dy { background: var(--gold); }
+
+    /* error / result */
+    .err-box {
+      display: none; margin-top: 14px;
+      background: rgba(247,37,133,.08); border: 1px solid rgba(247,37,133,.22);
+      border-radius: 10px; padding: 12px 15px;
+      color: #ff6ba0; font-size: .875rem;
+    }
+    .err-box.show { display: block; }
+    .result-panel { display: none; margin-top: 20px; animation: fu .35s ease both; }
+    .result-panel.show { display: block; }
+    .result-inner {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px;
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .thumb {
+      width: 76px; height: 76px; border-radius: 10px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--violet), var(--pink));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem; overflow: hidden;
+    }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .r-info { flex: 1; min-width: 160px; }
+    .r-title { font-weight: 600; font-size: .94rem; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 320px; }
+    .r-meta { font-size: .78rem; color: var(--muted); }
+    .r-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-save {
+      background: linear-gradient(135deg, var(--pink), var(--violet));
+      border: none; border-radius: 9px; color: #fff;
+      font-family: var(--fh); font-weight: 700; font-size: .82rem;
+      padding: 9px 18px; cursor: pointer;
+      transition: opacity .2s, transform .15s;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .btn-save:hover { opacity: .85; transform: translateY(-1px); }
+    .btn-alt {
+      background: transparent; border: 1px solid var(--border);
+      border-radius: 9px; color: var(--text);
+      font-family: var(--fh); font-weight: 600; font-size: .82rem;
+      padding: 9px 18px; cursor: pointer;
+      transition: background .2s, border-color .2s;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .btn-alt:hover { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.18); }
+
+    /* progress bar */
+    .prog-wrap { display: none; margin-top: 14px; }
+    .prog-wrap.show { display: block; }
+    .prog-bar { height: 4px; background: var(--surface); border-radius: 4px; overflow: hidden; }
+    .prog-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--pink), var(--violet)); border-radius: 4px; transition: width .3s; }
+    .prog-label { font-size: .75rem; color: var(--muted); margin-top: 6px; }
+
+    /* ─────────────────── TRUST STRIP ─────────────────── */
+    .trust { display: flex; justify-content: center; gap: 40px; padding: 44px 0 32px; flex-wrap: wrap; }
+    .trust-item { text-align: center; }
+    .trust-num { font-family: var(--fh); font-weight: 800; font-size: 2rem; background: linear-gradient(135deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .trust-lbl { font-size: .78rem; color: var(--muted); margin-top: 3px; }
+
+    /* ─────────────────── MAIN LAYOUT ─────────────────── */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 32px;
+      padding-bottom: 60px;
+    }
+    @media (max-width: 960px) { .main-layout { grid-template-columns: 1fr; } }
+
+    /* ─────────────────── SECTION HEADINGS ─────────────────── */
+    .sec-head {
+      font-family: var(--fh); font-weight: 700; font-size: 1.45rem;
+      margin-bottom: 22px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .sec-head::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* ─────────────────── STEPS ─────────────────── */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px,1fr)); gap: 15px; margin-bottom: 48px; }
+    .step {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r); padding: 22px;
+      transition: border-color .2s, transform .2s;
+    }
+    .step:hover { border-color: rgba(247,37,133,.3); transform: translateY(-3px); }
+    .step-n { font-family: var(--fh); font-weight: 800; font-size: 2.1rem; line-height: 1; margin-bottom: 10px; background: linear-gradient(135deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .step-t { font-weight: 600; margin-bottom: 5px; }
+    .step-d { font-size: .82rem; color: var(--muted); }
+
+    /* ─────────────────── FEATURES ─────────────────── */
+    .feats { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px,1fr)); gap: 14px; margin-bottom: 48px; }
+    .feat { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; transition: border-color .2s; }
+    .feat:hover { border-color: rgba(123,47,255,.3); }
+    .feat-icon { font-size: 1.6rem; margin-bottom: 8px; }
+    .feat-t { font-weight: 600; font-size: .92rem; margin-bottom: 5px; }
+    .feat-d { font-size: .8rem; color: var(--muted); }
+
+    /* ─────────────────── FAQ ─────────────────── */
+    .faq-list { margin-bottom: 48px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      padding: 17px 0; font-weight: 600; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; user-select: none;
+    }
+    .faq-q::after { content: '+'; font-size: 1.2rem; color: var(--pink); flex-shrink: 0; transition: transform .22s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { font-size: .87rem; color: var(--muted); max-height: 0; overflow: hidden; transition: max-height .3s, padding .3s; }
+    .faq-item.open .faq-a { max-height: 250px; padding-bottom: 16px; }
+
+    /* ─────────────────── SEO ARTICLE ─────────────────── */
+    .article h2 { font-family: var(--fh); font-size: 1.15rem; font-weight: 700; margin: 26px 0 8px; }
+    .article p { font-size: .88rem; color: var(--muted); margin-bottom: 11px; }
+    .article ul { padding-left: 18px; }
+    .article li { font-size: .88rem; color: var(--muted); margin-bottom: 5px; }
+    .article strong { color: var(--text); }
+
+    /* ─────────────────── SIDEBAR ─────────────────── */
+    .sidebar { display: flex; flex-direction: column; gap: 22px; }
+    .sb-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; }
+    .sb-title { font-family: var(--fh); font-weight: 700; font-size: .95rem; margin-bottom: 14px; }
+    .sb-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .sb-list li { display: flex; align-items: center; gap: 10px; font-size: .83rem; color: var(--muted); }
+    .sb-list li span { font-size: 1.1rem; }
+
+    /* ─────────────────── BOTTOM BILLBOARD ─────────────────── */
+    .bottom-ad { text-align: center; padding: 28px 0; }
+
+    /* ─────────────────── FOOTER ─────────────────── */
+    footer { border-top: 1px solid var(--border); padding: 36px 0 100px; }
+    .foot-grid { display: grid; grid-template-columns: 1fr repeat(3, auto); gap: 40px; flex-wrap: wrap; }
+    @media (max-width: 700px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+    .foot-brand p { font-size: .8rem; color: var(--muted); max-width: 240px; margin-top: 8px; line-height: 1.5; }
+    .foot-col h4 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin-bottom: 11px; }
+    .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .foot-col a { color: var(--muted); text-decoration: none; font-size: .83rem; transition: color .2s; }
+    .foot-col a:hover { color: var(--text); }
+    .foot-bottom { margin-top: 28px; text-align: center; font-size: .75rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 18px; }
+
+    /* ─────────────────── SPINNER ─────────────────── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .sp { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.3); border-top-color: #fff; border-radius: 50%; animation: spin .7s linear infinite; }
+
+    /* ─────────────────── RESPONSIVE ─────────────────── */
+    @media (max-width: 580px) {
+      .input-row { flex-direction: column; }
+      .btn-dl { justify-content: center; }
+      header { flex-direction: column; gap: 14px; }
+      .dl-card { padding: 22px 16px; }
+      .hero { padding: 44px 0 36px; }
+      /* hide desktop-only ads on mobile */
+      .desktop-only { display: none !important; }
+    }
+    @media (min-width: 581px) {
+      .mobile-only { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- AMBIENT -->
+<div class="blob b1" aria-hidden="true"></div>
+<div class="blob b2" aria-hidden="true"></div>
+<div class="blob b3" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════
+  AD #1 – TOP LEADERBOARD (728×90 desktop / 320×50 mobile)
+  Highest CTR placement — first thing visible above the fold
+═══════════════════════════════════ -->
+<div class="topbar-ad z">
+  <div class="ad-wrap desktop-only">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-leaderboard">
+      <!-- ✏ REPLACE with AdSense Leaderboard unit -->
+      <!-- <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXXXXXX"></ins> -->
+      <div class="ad-placeholder">Ad Slot · Leaderboard 728 × 90</div>
+    </div>
+  </div>
+  <div class="ad-wrap mobile-only">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-mobile-banner">
+      <!-- ✏ REPLACE with AdSense Mobile Banner unit -->
+      <div class="ad-placeholder">Ad Slot · Mobile Banner 320 × 50</div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="z wrap">
+  <header>
+    <a href="/" class="logo" aria-label="ReelSave Home">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="url(#g0)"/>
+        <path d="M16 8v10m0 0l-4-4m4 4l4-4M9 22h14" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs><linearGradient id="g0" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#f72585"/><stop offset="1" stop-color="#7b2fff"/></linearGradient></defs>
+      </svg>
+      ReelSave
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#how">How It Works</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+</div>
+
+<!-- ═══════════════════════════════════════ MAIN ═══════════════════════════════════════ -->
+<main>
+<div class="z wrap">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="badge" aria-label="Features">
+      <svg width="8" height="8" viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4" fill="#f72585"/></svg>
+      Free · No Login · No Watermark · Unlimited Downloads
+    </div>
+    <h1 id="h1">Download <em>Instagram Reels</em><br/>in HD — Instantly &amp; Free</h1>
+    <p>The world's fastest Instagram Reel Downloader. Paste any public Reel link, get a clean HD video in seconds.</p>
+
+    <!-- DOWNLOADER WIDGET -->
+    <div class="dl-card" role="main">
+      <div class="input-row">
+        <label for="reel-url" class="sr-only" style="position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden">Instagram Reel URL</label>
+        <input type="url" id="reel-url" class="url-input"
+          placeholder="https://www.instagram.com/reel/..."
+          autocomplete="off" spellcheck="false"
+          aria-label="Instagram Reel URL" />
+        <button class="btn-dl" id="btn-dl" onclick="doDownload()" aria-label="Download Reel">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M2 13h12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Download
+        </button>
+      </div>
+      <div class="hints">
+        <div class="hint"><div class="dot dg"></div>HD &amp; SD Quality</div>
+        <div class="hint"><div class="dot db"></div>No Watermark</div>
+        <div class="hint"><div class="dot dy"></div>All Devices</div>
+        <div class="hint"><div class="dot" style="background:var(--pink)"></div>Unlimited Free</div>
+      </div>
+      <div class="err-box" id="err" role="alert" aria-live="polite"></div>
+
+      <!-- PROGRESS -->
+      <div class="prog-wrap" id="prog">
+        <div class="prog-bar"><div class="prog-fill" id="prog-fill"></div></div>
+        <div class="prog-label" id="prog-lbl">Fetching video info…</div>
+      </div>
+
+      <!-- RESULT -->
+      <div class="result-panel" id="result" aria-live="polite">
+        <div class="result-inner">
+          <div class="thumb" id="r-thumb">🎬</div>
+          <div class="r-info">
+            <div class="r-title" id="r-title">Instagram Reel</div>
+            <div class="r-meta" id="r-meta">HD · MP4 · Ready</div>
+          </div>
+          <div class="r-actions">
+            <button class="btn-save" id="btn-save" onclick="saveVideo()" aria-label="Save as MP4">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8m0 0L4.5 6.5M7 9l2.5-2.5M1 12h12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Save MP4
+            </button>
+            <button class="btn-alt" onclick="saveAudio()" aria-label="Save as MP3">🎵 Save MP3</button>
+            <button class="btn-alt" onclick="copyLink()" id="btn-copy" aria-label="Copy video link">🔗 Copy Link</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.dl-card -->
+  </section>
+
+  <!-- ═══ AD #2 – IN-FEED (below hero, highest-intent moment) ═══ -->
+  <div class="ad-wrap" role="complementary" aria-label="Advertisement" style="margin:8px 0 32px">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-in-feed" style="max-width:740px;margin:0 auto">
+      <!-- ✏ REPLACE with AdSense In-Feed / Native unit -->
+      <div class="ad-placeholder" style="width:100%;height:100px">Ad Slot · In-Feed Native (below hero — very high CTR)</div>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust" aria-label="Site statistics">
+    <div class="trust-item"><div class="trust-num">80M+</div><div class="trust-lbl">Reels Downloaded</div></div>
+    <div class="trust-item"><div class="trust-num">4.9★</div><div class="trust-lbl">User Rating</div></div>
+    <div class="trust-item"><div class="trust-num">190+</div><div class="trust-lbl">Countries</div></div>
+    <div class="trust-item"><div class="trust-num">∞</div><div class="trust-lbl">No Daily Limit</div></div>
+    <div class="trust-item"><div class="trust-num">0₹</div><div class="trust-lbl">Always Free</div></div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main-layout">
+
+    <!-- LEFT CONTENT -->
+    <div>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" aria-labelledby="how-h">
+        <h2 class="sec-head" id="how-h">How to Download Instagram Reels</h2>
+        <div class="steps">
+          <div class="step"><div class="step-n">01</div><div class="step-t">Open Instagram</div><div class="step-d">Find the Reel you want to save. Tap the <strong>Share</strong> icon (paper plane).</div></div>
+          <div class="step"><div class="step-n">02</div><div class="step-t">Copy the Link</div><div class="step-d">Tap <strong>Copy Link</strong>. On desktop, click the three-dot menu → Copy link.</div></div>
+          <div class="step"><div class="step-n">03</div><div class="step-t">Paste &amp; Download</div><div class="step-d">Paste the link above and click <strong>Download</strong>. Done in under 5 seconds.</div></div>
+        </div>
+      </section>
+
+      <!-- ═══ AD #3 – MEDIUM RECTANGLE (300×250) – between sections ═══ -->
+      <div class="ad-wrap" role="complementary" aria-label="Advertisement" style="margin-bottom:40px">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-mrec" style="margin:0 auto">
+          <!-- ✏ REPLACE with AdSense Medium Rectangle -->
+          <div class="ad-placeholder">Ad Slot · Medium Rectangle 300 × 250</div>
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <section id="features" aria-labelledby="feat-h">
+        <h2 class="sec-head" id="feat-h">Why 80 Million Users Choose ReelSave</h2>
+        <div class="feats">
+          <div class="feat"><div class="feat-icon">⚡</div><div class="feat-t">Lightning Fast</div><div class="feat-d">Server-side processing in under 3 seconds on average.</div></div>
+          <div class="feat"><div class="feat-icon">🔒</div><div class="feat-t">100% Private</div><div class="feat-d">We never store your links, videos, or any personal data.</div></div>
+          <div class="feat"><div class="feat-icon">📱</div><div class="feat-t">All Devices</div><div class="feat-d">Works on iPhone, Android, Windows, Mac — any browser.</div></div>
+          <div class="feat"><div class="feat-icon">🎞️</div><div class="feat-t">Original HD Quality</div><div class="feat-d">Download in the exact quality the creator uploaded.</div></div>
+          <div class="feat"><div class="feat-icon">🚫</div><div class="feat-t">Zero Watermark</div><div class="feat-d">Clean original file — no ReelSave branding added.</div></div>
+          <div class="feat"><div class="feat-icon">🎵</div><div class="feat-t">MP3 Extraction</div><div class="feat-d">Extract and download audio-only in MP3 format.</div></div>
+          <div class="feat"><div class="feat-icon">♾️</div><div class="feat-t">Unlimited Downloads</div><div class="feat-d">No daily cap, no subscription, free forever.</div></div>
+          <div class="feat"><div class="feat-icon">🌍</div><div class="feat-t">190+ Countries</div><div class="feat-d">Global CDN ensures fast speeds wherever you are.</div></div>
+        </div>
+      </section>
+
+      <!-- ═══ AD #4 – LARGE RECTANGLE (336×280) – after features ═══ -->
+      <div class="ad-wrap" role="complementary" aria-label="Advertisement" style="margin-bottom:40px">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-large-rect" style="margin:0 auto">
+          <!-- ✏ REPLACE with AdSense Large Rectangle -->
+          <div class="ad-placeholder">Ad Slot · Large Rectangle 336 × 280</div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <section id="faq" aria-labelledby="faq-h">
+        <h2 class="sec-head" id="faq-h">Frequently Asked Questions</h2>
+        <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">How do I download an Instagram Reel on my phone?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Open Instagram, find the Reel, tap the share icon (➤), and choose Copy Link. Then open this page in your browser, paste the link, and tap Download. On Android you can save directly to storage; on iPhone, save to Files then move to Camera Roll.</span></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">Is ReelSave completely free?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Yes. ReelSave is 100% free with no sign-up, no subscription, and no hidden fees. We're supported by non-intrusive ads.</span></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">Do downloaded Reels have a watermark?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">No. We fetch the original file directly from Instagram's content delivery network. You get the clean file exactly as the creator uploaded it — no watermarks added.</span></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">How many Reels can I download per day?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">There is no download limit. You can download as many Instagram Reels as you need, completely free and without any caps.</span></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">Can I download private Instagram Reels?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">No. ReelSave can only access public Reels. Private content requires the account holder's permission and cannot be downloaded by third-party tools.</span></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">What video formats are supported?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">ReelSave downloads MP4 (video) and MP3 (audio-only extraction). MP4 is compatible with all devices and editing software.</span></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="faq(this)" role="button" tabindex="0" aria-expanded="false" itemprop="name">Is it legal to download Instagram Reels?</div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Downloading for personal offline viewing is generally accepted, but re-sharing, redistributing, or commercialising others' content without permission may violate Instagram's Terms of Service and copyright law. Always respect creators' rights.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ AD #5 – IN-CONTENT (between FAQ and article) ═══ -->
+      <div class="ad-wrap" role="complementary" aria-label="Advertisement" style="margin-bottom:40px">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-in-feed" style="max-width:100%;margin:0 auto">
+          <!-- ✏ REPLACE with AdSense In-Article / In-Content unit -->
+          <div class="ad-placeholder" style="width:100%;height:100px">Ad Slot · In-Content / In-Article</div>
+        </div>
+      </div>
+
+      <!-- SEO ARTICLE -->
+      <article class="article" aria-labelledby="art-h">
+        <h2 id="art-h" style="font-family:var(--fh);font-size:1.35rem;font-weight:800;margin-bottom:10px">The Best Free Instagram Reel Downloader in 2025</h2>
+        <p>Instagram Reels generate billions of views daily, making them the fastest-growing short-video format. ReelSave lets you save any public Reel in original HD quality — no app install, no account needed.</p>
+
+        <h2>How to Copy an Instagram Reel Link (Step by Step)</h2>
+        <p><strong>On mobile:</strong> Open the Instagram app → Navigate to the Reel → Tap the share icon (paper plane at the bottom right) → Tap <strong>Copy Link</strong>. The URL is now in your clipboard.</p>
+        <p><strong>On desktop:</strong> Go to instagram.com → Open the Reel → Click the three-dot menu (⋯) below the video → Click <strong>Copy link</strong>.</p>
+
+        <h2>Download Instagram Reels Without Watermark</h2>
+        <p>Unlike screen-recorder or app-based solutions, ReelSave downloads the original <strong>.mp4 file</strong> directly from Instagram's CDN. The result is a clean, crisp, full-resolution video with no logos, text, or watermarks from us or from Instagram.</p>
+
+        <h2>Supported Instagram Content Types</h2>
+        <ul>
+          <li><strong>Reels</strong> — Short-form vertical video (up to 90 seconds)</li>
+          <li><strong>Posts / IGTV</strong> — Square and landscape video posts</li>
+          <li><strong>Stories</strong> — 15-second story clips (public profiles)</li>
+          <li><strong>Carousels</strong> — First video in a carousel post</li>
+        </ul>
+
+        <h2>ReelSave vs Other Instagram Downloaders</h2>
+        <p>Most tools inject watermarks, require sign-ups, limit daily downloads, or are cluttered with deceptive download buttons. ReelSave offers genuine watermark-free downloads, unlimited usage, zero account requirement, and a clean interface with honest advertising.</p>
+
+        <h2>Privacy Policy Summary</h2>
+        <p>ReelSave processes your request server-side and immediately discards the URL after responding. We do not log, store, or sell your data or the URLs you paste. Your downloads are ephemeral and private.</p>
+      </article>
+
+    </div><!-- /left -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar">
+
+      <!-- ═══ AD #6 – SIDEBAR MEDIUM RECTANGLE (300×250) ═══ -->
+      <div class="ad-wrap" role="complementary" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-mrec">
+          <!-- ✏ REPLACE with AdSense 300×250 -->
+          <div class="ad-placeholder">Ad Slot · 300 × 250 (Sidebar Top)</div>
+        </div>
+      </div>
+
+      <!-- SUPPORTED PLATFORMS -->
+      <div class="sb-card">
+        <div class="sb-title">📲 Supported Content</div>
+        <ul class="sb-list">
+          <li><span>🎬</span> Instagram Reels</li>
+          <li><span>📸</span> IG Photo Posts</li>
+          <li><span>🎞️</span> IGTV Videos</li>
+          <li><span>🎠</span> Carousel Posts</li>
+          <li><span>⏱️</span> Stories (public)</li>
+        </ul>
+      </div>
+
+      <!-- ═══ AD #7 – SIDEBAR HALF PAGE (300×600) ═══ -->
+      <div class="ad-wrap" role="complementary" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-half-page">
+          <!-- ✏ REPLACE with AdSense Half Page 300×600 -->
+          <div class="ad-placeholder">Ad Slot · Half Page 300 × 600</div>
+        </div>
+      </div>
+
+      <!-- TIPS -->
+      <div class="sb-card">
+        <div class="sb-title">💡 Tips</div>
+        <ul class="sb-list" style="gap:13px">
+          <li><span>🔓</span> Reel must be from a <strong>Public</strong> account</li>
+          <li><span>📋</span> Use app's <strong>Copy Link</strong> option</li>
+          <li><span>💾</span> iPhone: Save to Files → Camera Roll</li>
+          <li><span>🤖</span> Android: Save directly to Downloads</li>
+          <li><span>🔄</span> Refresh if download takes too long</li>
+        </ul>
+      </div>
+
+      <!-- ═══ AD #8 – SIDEBAR MEDIUM RECTANGLE #2 ═══ -->
+      <div class="ad-wrap" role="complementary" aria-label="Advertisement">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-mrec">
+          <!-- ✏ REPLACE with AdSense 300×250 -->
+          <div class="ad-placeholder">Ad Slot · 300 × 250 (Sidebar Bottom)</div>
+        </div>
+      </div>
+
+    </aside>
+  </div><!-- /main-layout -->
+
+  <!-- ═══ AD #9 – BILLBOARD (970×250) – full width before footer ═══ -->
+  <div class="bottom-ad desktop-only" role="complementary" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-billboard">
+      <!-- ✏ REPLACE with AdSense Billboard -->
+      <div class="ad-placeholder">Ad Slot · Billboard 970 × 250 (high-CPM desktop)</div>
+    </div>
+  </div>
+
+  <!-- ═══ AD #10 – MOBILE BOTTOM BANNER ═══ -->
+  <div class="bottom-ad mobile-only" role="complementary" aria-label="Advertisement">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-mobile-banner" style="margin:0 auto">
+      <!-- ✏ REPLACE with AdSense Mobile Banner -->
+      <div class="ad-placeholder">Ad Slot · 320 × 50 Mobile Bottom</div>
+    </div>
+  </div>
+
+</div><!-- /wrap -->
+</main>
+
+<!-- FOOTER -->
+<footer class="z">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="/" class="logo" style="font-size:1.2rem" aria-label="ReelSave">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="url(#gf)"/><path d="M16 8v10m0 0l-4-4m4 4l4-4M9 22h14" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="gf" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#f72585"/><stop offset="1" stop-color="#7b2fff"/></linearGradient></defs></svg>
+          ReelSave
+        </a>
+        <p>Free Instagram Reel Downloader. HD quality, no watermark, no login. Works on all devices worldwide.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="#">Reel Downloader</a></li>
+          <li><a href="#">Story Downloader</a></li>
+          <li><a href="#">IGTV Downloader</a></li>
+          <li><a href="#">Audio Extractor</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Report a Bug</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">DMCA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2025 ReelSave. Not affiliated with Instagram or Meta Platforms, Inc. Use responsibly and always respect content creators' intellectual property rights.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ AD #11 – STICKY ANCHOR BOTTOM (320×50) ═══
+     Appears fixed at screen bottom on mobile — very high visibility -->
+<div class="ad-anchor z" id="anchor-ad" role="complementary" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <!-- ✏ REPLACE with AdSense Anchor / Sticky Footer ad unit -->
+  <div class="ad-placeholder" style="width:320px;max-width:100%;height:50px;margin:0 auto">Ad Slot · Anchor / Sticky Bottom 320 × 50</div>
+  <button class="ad-anchor-close" onclick="document.getElementById('anchor-ad').style.display='none'" aria-label="Close ad">×</button>
+</div>
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+  /* ──────────────────────────────────
+     STATE
+  ────────────────────────────────── */
+  let _videoUrl = null;
+  let _audioUrl = null;
+  let _shortcode = null;
+
+  /* ──────────────────────────────────
+     HELPERS
+  ────────────────────────────────── */
+  const $ = id => document.getElementById(id);
+
+  function showErr(msg) {
+    const el = $('err');
+    el.textContent = msg;
+    el.classList.add('show');
+    $('result').classList.remove('show');
+    $('prog').classList.remove('show');
+  }
+  function clearErr() { $('err').classList.remove('show'); }
+
+  function setLoading(on) {
+    const btn = $('btn-dl');
+    btn.classList.toggle('loading', on);
+    btn.innerHTML = on
+      ? '<div class="sp"></div> Processing…'
+      : '<svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8m0 0L5 7m3 3 3-3M2 13h12" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Download';
+  }
+
+  function setProgress(pct, label) {
+    $('prog').classList.add('show');
+    $('prog-fill').style.width = pct + '%';
+    $('prog-lbl').textContent = label;
+  }
+
+  /* ──────────────────────────────────
+     DOWNLOAD
+  ────────────────────────────────── */
+  async function doDownload() {
+    clearErr();
+    _videoUrl = null;
+    _audioUrl = null;
+
+    const url = $('reel-url').value.trim();
+    if (!url) { showErr('⚠️ Please paste an Instagram Reel link first.'); return; }
+
+    const igPat = /instagram\.com\/(reel|reels|p|tv)\//i;
+    if (!igPat.test(url)) {
+      showErr('⚠️ That doesn\'t look like a valid Instagram URL. It should contain /reel/ or /p/.');
+      return;
+    }
+
+    setLoading(true);
+    setProgress(15, 'Connecting to Instagram…');
+    $('result').classList.remove('show');
+
+    try {
+      setProgress(40, 'Fetching video info…');
+
+      const res = await fetch('/api/download', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url }),
+      });
+
+      setProgress(75, 'Processing…');
+      const data = await res.json();
+
+      if (!data.success) {
+        showErr('❌ ' + (data.error || 'Could not fetch video. Please try again.'));
+        return;
+      }
+
+      setProgress(100, 'Ready!');
+      _videoUrl  = data.videoUrl;
+      _shortcode = data.shortcode;
+
+      // Update UI
+      $('r-title').textContent = data.owner
+        ? `@${data.owner} — ${data.caption || 'Instagram Reel'}`
+        : (data.caption || 'Instagram Reel');
+
+      const dur = data.duration ? ` · ${data.duration}s` : '';
+      $('r-meta').textContent = `HD · MP4${dur} · Ready to download`;
+
+      if (data.thumbUrl) {
+        $('r-thumb').innerHTML = `<img src="${data.thumbUrl}" alt="Reel thumbnail" loading="lazy" onerror="this.parentElement.textContent='🎬'"/>`;
+      }
+
+      setTimeout(() => {
+        $('prog').classList.remove('show');
+        $('result').classList.add('show');
+      }, 400);
+
+    } catch (e) {
+      showErr('❌ Network error. Check your internet connection and try again.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  /* save video – streams through /api/proxy-download */
+function saveVideo() {
+  if (!_videoUrl) return;
+  window.open(_videoUrl, '_blank');
+}
+  /* save audio (server would need to convert; here we link MP4 with .mp3 hint) */
+  function saveAudio() {
+    if (!_videoUrl) return;
+    const a = document.createElement('a');
+    a.href = `/api/proxy-download?url=${encodeURIComponent(_videoUrl)}&filename=audio-${_shortcode || 'reelsave'}.mp3`;
+    a.download = `audio-${_shortcode || 'reelsave'}.mp3`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  function copyLink() {
+    if (!_videoUrl) return;
+    navigator.clipboard.writeText(_videoUrl).then(() => {
+      const btn = $('btn-copy');
+      btn.textContent = '✅ Copied!';
+      setTimeout(() => { btn.textContent = '🔗 Copy Link'; }, 2000);
+    });
+  }
+
+  /* ──────────────────────────────────
+     FAQ ACCORDION
+  ────────────────────────────────── */
+  function faq(el) {
+    const item = el.closest('.faq-item');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!open) { item.classList.add('open'); el.setAttribute('aria-expanded', 'true'); }
+  }
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); faq(q); } });
+  });
+
+  /* Enter key on input */
+  $('reel-url').addEventListener('keydown', e => { if (e.key === 'Enter') doDownload(); });
+
+  /* ──────────────────────────────────
+     INIT ADSENSE (uncomment when ready)
+  ────────────────────────────────── */
+  // (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>
